@@ -11,6 +11,7 @@ use arrow_array::{PrimitiveArray, UInt32Array};
 use lance_core::{Error, Result};
 
 #[cfg(target_os = "linux")]
+pub mod buffer_pool;
 pub(crate) mod direct;
 pub mod ffi;
 pub mod local;
